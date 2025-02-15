@@ -47,15 +47,19 @@ ol {
   column-gap: 30px;
   max-width: 1140px;
   width: 100%;
+  grid-template-columns: 711px 399px;
 }
 
 .result {
   grid-area: 1 / 1 / 2 / 2;
 }
 
+.result__video-container {
+  margin-bottom: 16px;
+}
+
 .result__video {
-        width: 100%;
-        height: 100%;
+  width: 100%;
 }
 
 .content__details {
@@ -67,7 +71,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
 }
 
 .content__list-container {
@@ -93,6 +97,29 @@ margin-right: 140px;
 color: #545050;
 }
 
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  
+}
+
+.content__video-card-thumbnail {
+  max-width: 194px;
+  max-height: 103px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  
+}
 
 
 /* Кастомный скроллбар */
