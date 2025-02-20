@@ -88,6 +88,7 @@ a {
 }
 
 .search-form__submit-button {
+  width: 194px;
   justify-self: flex-end;
   align-self: flex-end;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -105,7 +106,6 @@ a {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  
 }
 
 .search-form__label {
@@ -189,10 +189,6 @@ a {
   background-color: transparent;
   border: #fff 1px solid;
   height: 34px;
-}
-
-.search-form__submit-button {
-  width: 194px;
 }
 
 .more-button {
@@ -306,11 +302,6 @@ a {
   line-height: 0.9;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -moz-box;
-  -moz-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
   line-clamp: 4;
   box-orient: vertical;
 }
