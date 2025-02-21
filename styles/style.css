@@ -77,6 +77,25 @@ a {
   height: 100%;
 }
 
+.button {
+  font-family: "Fira Sans Condensed", sans-serif;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  border: #fff 1px solid;
+  min-height: 34px;
+}
+
+.search-form__submit-button {
+  max-width: 194px;
+  width: 100%;
+  justify-self: flex-end;
+  align-self: flex-end;
+  text-align: center;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -85,19 +104,6 @@ a {
 
 .search-form__fieldset {
   border: none;
-}
-
-.search-form__submit-button {
-  width: 194px;
-  justify-self: flex-end;
-  align-self: flex-end;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-}
-
-.search-form__fieldset:first-child {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -138,18 +144,10 @@ a {
   color: #fff;
 }
 
-.search-form__checkbox-list .search-form__label:hover {
+.search-form__checkbox-list .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   cursor: pointer;
-}
-
-.search-form__fieldset:nth-child(2) {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .search-form__checkbox-list {
@@ -159,36 +157,24 @@ a {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 19px;
+  block-size: 19px;
   border: 1px solid #fff;
-  width: 19px;
-  height: 19px;
-  background-color: transparent;
 }
 
 .search-form__pseudo-checkbox::after {
   content: "";
-  position: absolute;
-  border: 1px solid #1b1919;
-  width: 19px;
-  height: 19px;
+  min-inline-size: 16px;
+  min-block-size: 16px;
   background-color: #fff;
-  outline: 1px #fff solid;
   display: none;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   display: block;
-}
-
-.button {
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-  background-color: transparent;
-  border: #fff 1px solid;
-  height: 34px;
 }
 
 .more-button {
@@ -280,6 +266,8 @@ a {
   justify-content: flex-start;
   flex-direction: column;
   gap: 4px;
+  max-width: 196px;
+  width: 100%;
 }
 
 .content__video-card-title {
@@ -302,11 +290,16 @@ a {
   line-height: 0.9;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-clamp: 4;
-  box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .content__card-link.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -316,6 +309,7 @@ a {
 
 .content__video-card:hover {
   text-decoration: underline;
+  text-underline-offset: 1.5px;
 }
 
 /* Кастомный скроллбар */
