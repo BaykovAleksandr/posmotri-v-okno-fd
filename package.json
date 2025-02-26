@@ -1,0 +1,29 @@
+{
+  "name": "posmotri-v-okno-fd",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "check": "prettier './**/*.{html,css,js}' --check",
+    "format": "prettier './**/*.{html,css,js}' --format",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaykovAleksandr/ono-tebe-nado-fd.git"
+  },
+  "author": "AlexBaykov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaykovAleksandr/ono-tebe-nado-fd/issues"
+  },
+  "homepage": "https://github.com/BaykovAleksandr/ono-tebe-nado-fd#readme",
+  "dependencies": {
+    "prettier": "^3.5.2",
+    "stylelint": "^16.14.1"
+  }
+}
